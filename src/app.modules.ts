@@ -3,11 +3,12 @@ import { ConfigModule } from "@nestjs/config";
 import { SequelizeModule } from "@nestjs/sequelize";
 import { Feedback } from "./feedbacks/feedback.models";
 import { FeedbacksModule } from "./feedbacks/feedbacks.module";
+import { ValidationPipe } from "./pipes/validation.pipe";
 
 
 @Module({
     controllers: [],
-    providers: [],
+    providers: [ValidationPipe],
     imports: [
         ConfigModule.forRoot({
             envFilePath: '.env'
@@ -22,7 +23,8 @@ import { FeedbacksModule } from "./feedbacks/feedbacks.module";
             models: [Feedback],
             autoLoadModels: true,
         }),
-        FeedbacksModule
+        FeedbacksModule,
     ]
+    
 })
 export class AppModule {}

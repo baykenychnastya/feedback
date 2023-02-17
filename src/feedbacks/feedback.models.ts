@@ -18,6 +18,6 @@ export class Feedback extends Model<Feedback, FeedbackCreationAttrs>
     @Column({type: DataType.STRING, allowNull: false})
     email: string;
 
-    @Column({type: DataType.STRING, allowNull: false})
+    @Column({type: DataType.STRING(500), allowNull: false})
     message: string;
 }
