@@ -22,6 +22,11 @@ import { ValidationPipe } from "./pipes/validation.pipe";
             database: process.env.POSTGRES_DB,
             models: [Feedback],
             autoLoadModels: true,
+            dialectOptions: {
+                ssl: {
+                    require: 'true'
+                }
+            }
         }),
         FeedbacksModule,
     ]
