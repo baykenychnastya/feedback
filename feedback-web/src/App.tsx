@@ -5,6 +5,7 @@ import PinkCircle from './components/PinkCircle';
 import { useForm } from 'react-hook-form';
 import YellowCircle from './components/YellowCircle';
 import Media from './components/Media';
+import GreenSmile from './components/GreenSmile';
 
 function App() {
   async function addPost(body: CreateFeedbackDto) {
@@ -49,11 +50,6 @@ function App() {
       <div className="cloud cloud-3"></div>
       <div className="cloud cloud-4"></div>
       <div className="cloud cloud-5"></div>
-      <div className="cloud cloud-6"></div>
-      <div className="cloud cloud-7"></div>
-      <div className="cloud cloud-8"></div>
-      <div className="cloud cloud-9"></div>
-      <div className="cloud cloud-10"></div>
 
       <PinkCircle id="pink-circle-1"/>
       <YellowCircle id="yellow-circle-1"/>
@@ -91,9 +87,10 @@ function App() {
         </form>
       </div>
       <div className="footer p-relative" >
-      <PinkCircle id="pink-circle-2"/>
-      <YellowCircle id="yellow-circle-2"/>
-      <Media/>
+        <PinkCircle id="pink-circle-2"/>
+        <YellowCircle id="yellow-circle-2"/>
+        <Media/>
+        <GreenSmile id="green-smile-1"/>
      </div>
     </div>
   );

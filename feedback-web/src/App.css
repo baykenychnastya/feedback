@@ -85,6 +85,13 @@ input {
     height: 164px;
 }
 
+.cloud-5 {
+    left: 600px;
+    top: 460px;
+    width: 170px;
+    height: 164px;
+}
+
 .p-relative {
     position: relative;
 }
@@ -152,11 +159,11 @@ input {
     height: 85px;
     border-radius: 50%;
     background: #FAD34F;
-    z-index: -6;
 }
 
 .yellow-circle-width {
     width: 88px;
+    z-index: -7;
 }
 
 
@@ -280,4 +287,51 @@ button:hover {
     height: 200px;
     background: #FAFAFA;
     border: 1px solid #D8D8D8;
+    z-index: 1;
+}
+
+.green-smile {
+    background-image: url(./static/greenSmile.svg);
+    height: 97px;
+    width: 79px
+}
+
+#green-smile-1 {
+    top: 0px;
+    right: 80px;
+}
+
+#green-eye-right {
+    background-size: 100%;
+    position: absolute;
+    background-image: url(./static/smile-1.svg);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    left: 40px;
+    top: 66px;
+    transform: rotate(402deg);}
+
+#green-eye-left {
+    background-size: 100%;
+    position: absolute;
+    background-image: url(./static/smile-1.svg);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    left: 24px;
+    top: 66px;
+    transform: rotate(405deg);
+}
+
+#green-mouth {
+    background-size: 100%;
+    position: absolute;
+    background-image: url(./static/yellow-mouth.svg);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 18px;
+    left: 29px;
+    top: 49px;
+    transform: rotate(214deg);
 }
