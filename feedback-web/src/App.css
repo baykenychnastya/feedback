@@ -47,7 +47,42 @@ input {
     right: -350px;
     top: -125px;
     z-index: -10;
+}
 
+.cloud {
+    position: absolute;
+    background-image: url('./static/cloud.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -11;
+}
+
+.cloud-1 {
+    right: 779px;
+    top: 12px;
+    width: 103px;
+    height: 136px;
+}
+
+.cloud-2 {
+    right: 302px;
+    top: 10px;
+    width: 218px;
+    height: 164px;
+}
+
+.cloud-3 {
+    left: -38px;
+    top: 34px;
+    width: 245px;
+    height: 184px;
+}
+
+.cloud-4 {
+    left: -108px;
+    top: 248px;
+    width: 218px;
+    height: 164px;
 }
 
 .p-relative {
@@ -111,6 +146,95 @@ input {
     height: 40px;
     right: 106px;
     bottom: 95px;
+}
+
+.yellow-circle {
+    height: 85px;
+    border-radius: 50%;
+    background: #FAD34F;
+    z-index: -6;
+}
+
+.yellow-circle-width {
+    width: 88px;
+}
+
+
+#yellow-eye-right {
+    background-size: 4px;
+    position: absolute;
+    background-image: url(./static/yellow-eye-right.svg);
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 4px;
+    left: 44px;
+    top: 13px;
+}
+
+#yellow-eye-left {
+    background-size: 4px;
+    position: absolute;
+    background-image: url(./static/yellow-eye-right.svg);
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 4px;
+    left: 35px;
+    top: 18px;
+}
+
+#yellow-mouth {
+    background-size: 8px;
+    position: absolute;
+    background-image: url(./static/yellow-mouth.svg);
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 7px;
+    left: 41px;
+    top: 19px;
+}
+
+#yellow-circle-1 {
+    z-index: -9;
+    top: 10px;
+    left: 15px;
+} 
+
+#yellow-circle-2 {
+    right: -20px;
+    bottom: 30px;
+}
+
+#yellow-circle-3 {
+    right: 415px;
+    top: 328px;
+}
+
+.media {
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 70px;
+}
+
+.media-wrapper {
+    display: flex;
+    margin-left: 350px;
+    margin-top: 90px
+}
+
+.linkedin {
+    background-image: url(./static/linkedin.svg);
+}
+
+.twiter {
+    background-image: url(./static/twiter.svg);
+}
+
+.facebook {
+    background-image: url(./static/facebook.svg);
+}
+
+.pinterest {
+    background-image: url(./static/pinterest.svg);
 }
 
 form {

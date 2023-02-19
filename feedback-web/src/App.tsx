@@ -3,10 +3,12 @@ import { CreateFeedbackDto } from './dto/create-feedback.dto';
 import  './App.css'
 import PinkCircle from './components/PinkCircle';
 import { useForm } from 'react-hook-form';
+import YellowCircle from './components/YellowCircle';
+import Media from './components/Media';
 
 function App() {
   async function addPost(body: CreateFeedbackDto) {
-    await fetch('http://localhost:5000/feedbacks', {
+    await fetch(`${process.env.SERVER}/feedbacks`, {
         method: 'POST',
         body: JSON.stringify(body),
         headers: {
@@ -42,7 +44,20 @@ function App() {
   return (
     <div className="App">
       <div className="street-view"></div>
+      <div className="cloud cloud-1"></div>
+      <div className="cloud cloud-2"></div>
+      <div className="cloud cloud-3"></div>
+      <div className="cloud cloud-4"></div>
+      <div className="cloud cloud-5"></div>
+      <div className="cloud cloud-6"></div>
+      <div className="cloud cloud-7"></div>
+      <div className="cloud cloud-8"></div>
+      <div className="cloud cloud-9"></div>
+      <div className="cloud cloud-10"></div>
+
       <PinkCircle id="pink-circle-1"/>
+      <YellowCircle id="yellow-circle-1"/>
+      <YellowCircle id="yellow-circle-3"/>
       <div className="main">
         <h1 className="title">Reach out to us!</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -77,7 +92,9 @@ function App() {
       </div>
       <div className="footer p-relative" >
       <PinkCircle id="pink-circle-2"/>
-      </div>
+      <YellowCircle id="yellow-circle-2"/>
+      <Media/>
+     </div>
     </div>
   );
 }
