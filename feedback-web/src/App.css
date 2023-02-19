@@ -31,6 +31,10 @@ input {
     margin-left: 150px;
     flex-direction: column;
 }
+.eror-messsage {
+    color: #bf1650;
+    margin: 0px;
+}
 
 .street-view {
     position: absolute;
@@ -49,15 +53,31 @@ input {
 .p-relative {
     position: relative;
 }
-.pink-circle {
+
+.p-absolute {
     position: absolute;
+}
+
+.pink-circle {
     height: 210px;
-    width: 210px;
-    right: 300px;
     border-radius: 50%;
-    bottom: -600px;
     background: #F472B7;
     z-index: -9;
+}
+
+.pink-circle-width {
+    width: 210px;
+}
+
+#pink-circle-1 {
+    z-index: -9;
+    top: 384px;
+    right: 300px;
+}
+
+#pink-circle-2 {
+    top: 10px;
+    left: 70px;
 }
 
 #pink-eye-left {
@@ -67,8 +87,8 @@ input {
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
-    right: 428px;
-    bottom: -498px;
+    right: 130px;
+    bottom: 98px;
 }
 
 #pink-eye-right {
@@ -78,19 +98,19 @@ input {
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
-    right: 408px;
-    bottom: -485px;
+    right: 100px;
+    bottom: 120px;
 }
 
 #pink-mouth {
-    background-size: 15px;
+    background-size: 29px;
     position: absolute;
     background-image: url(./static/smile-1.svg);
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
-    right: 408px;
-    bottom: -508px;
+    right: 106px;
+    bottom: 95px;
 }
 
 form {
@@ -115,6 +135,7 @@ form {
 .input-message {
     height: 189px;
 }
+
 button {
     color: white;
     border: none;
@@ -124,6 +145,10 @@ button {
     border-radius: 500px;
     margin-top: 15px;
     font-size: 18px;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .footer {
