@@ -1,0 +1,134 @@
+input,
+input::placeholder {
+    font-family:'Apercu Arabic Pro';
+    font-style: normal;
+    color: #2D2D2D;
+}
+
+input {
+    padding-left: 46px;
+    font-size: 18px;
+    margin-bottom:8px;
+    box-sizing: border-box;
+    width: 557px;
+    height: 93px;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+  
+.main {
+    flex: 1;
+    display: flex;
+    align-items: start;
+    margin-left: 150px;
+    flex-direction: column;
+}
+
+.street-view {
+    position: absolute;
+    background-image: url('./static/street-view.svg');
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: 501px 855px;
+    width: 800px;
+    height: 800px;
+    right: -350px;
+    top: -125px;
+    z-index: -10;
+
+}
+
+.p-relative {
+    position: relative;
+}
+.pink-circle {
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    right: 300px;
+    border-radius: 50%;
+    bottom: -600px;
+    background: #F472B7;
+    z-index: -9;
+}
+
+#pink-eye-left {
+    background-size: 15px;
+    position: absolute;
+    background-image: url(./static/smile-2.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    right: 428px;
+    bottom: -498px;
+}
+
+#pink-eye-right {
+    background-size: 15px;
+    position: absolute;
+    background-image: url(./static/smile-2.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    right: 408px;
+    bottom: -485px;
+}
+
+#pink-mouth {
+    background-size: 15px;
+    position: absolute;
+    background-image: url(./static/smile-1.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    right: 408px;
+    bottom: -508px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom:30px;
+    width: 563px;
+    height: 58px;
+    left: 147px;
+    top: 179px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 130%;
+    color: #3E3E3E;
+}
+
+.input-message {
+    height: 189px;
+}
+button {
+    color: white;
+    border: none;
+    width: 218px;
+    height: 73px;
+    background: #FAD34F;
+    border-radius: 500px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.footer {
+    box-sizing: border-box;
+    height: 200px;
+    background: #FAFAFA;
+    border: 1px solid #D8D8D8;
+}
