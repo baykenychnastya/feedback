@@ -26,7 +26,8 @@ import { ValidationPipe } from "./pipes/validation.pipe";
                 ssl: {
                     require: 'true'
                 }
-            }
+            },
+            synchronize: false
         }),
         FeedbacksModule,
     ]
