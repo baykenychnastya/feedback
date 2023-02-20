@@ -9,7 +9,7 @@ import GreenSmile from './components/GreenSmile';
 
 function App() {
   async function addPost(body: CreateFeedbackDto) {
-    await fetch(`${process.env.SERVER}/feedbacks`, {
+    await fetch(`${process.env.ENV_SERVER}/feedbacks`, {
         method: 'POST',
         body: JSON.stringify(body),
         headers: {
