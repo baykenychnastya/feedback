@@ -12,7 +12,7 @@ import { ValidationPipe } from "./pipes/validation.pipe";
     imports: [
         ConfigModule.forRoot({
             envFilePath: '.env'
-        }), 
+        }),
         SequelizeModule.forRoot({
             dialect: 'postgres',
             host: process.env.POSTGRES_HOST,
@@ -30,6 +30,5 @@ import { ValidationPipe } from "./pipes/validation.pipe";
         }),
         FeedbacksModule,
     ]
-    
 })
 export class AppModule {}

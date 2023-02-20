@@ -10,7 +10,8 @@ input {
     font-size: 18px;
     margin-bottom:8px;
     box-sizing: border-box;
-    width: 557px;
+    max-width: 557px;
+    width: 100%;
     height: 93px;
     border: 1px solid #DCDCDC;
     border-radius: 10px;
@@ -21,7 +22,7 @@ input {
     flex-direction: column;
     height: 100%;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 }
   
 .main {
@@ -31,6 +32,14 @@ input {
     margin-left: 150px;
     flex-direction: column;
 }
+
+@media (max-width: 800px) {
+    .main {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+}
+
 .eror-messsage {
     color: #bf1650;
     margin: 0px;
@@ -109,6 +118,7 @@ input {
 
 .pink-circle-width {
     width: 210px;
+    z-index: -15;
 }
 
 #pink-circle-1 {
@@ -228,6 +238,12 @@ input {
     margin-top: 90px
 }
 
+@media (max-width: 800px) {
+    .media-wrapper {
+        margin-left: 40px;
+    }
+}
+
 .linkedin {
     background-image: url(./static/linkedin.svg);
 }
@@ -247,12 +263,12 @@ input {
 form {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .title {
     margin-top:80px;
     margin-bottom:30px;
-    width: 563px;
     height: 58px;
     left: 147px;
     top: 179px;
@@ -275,7 +291,7 @@ button {
     height: 73px;
     background: #FAD34F;
     border-radius: 500px;
-    margin-top: 15px;
+    margin: 15px 0;
     font-size: 18px;
 }
 
@@ -285,10 +301,11 @@ button:hover {
 
 .footer {
     box-sizing: border-box;
-    height: 200px;
+    min-height: 200px;
     background: #FAFAFA;
     border: 1px solid #D8D8D8;
     z-index: 1;
+    overflow: hidden;
 }
 
 .green-smile {
